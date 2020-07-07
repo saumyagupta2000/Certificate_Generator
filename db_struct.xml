@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Jul 07, 2020 at 04:14 PM
+- Server version: 10.4.13-MariaDB
+- PHP Version: 7.4.7
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="adminpanel" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="codetab">
+                CREATE TABLE `codetab` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `v_key` varchar(60) NOT NULL,
+                  `url` varchar(60) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="register">
+                CREATE TABLE `register` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(50) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `password` varchar(255) NOT NULL,
+                  `usertype` varchar(20) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="student">
+                CREATE TABLE `student` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `fname` varchar(50) NOT NULL,
+                  `occupation` varchar(50) NOT NULL,
+                  `duration` varchar(50) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+</pma_xml_export>
